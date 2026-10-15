@@ -1,0 +1,11 @@
+claim_id: CLAIM-EXAMPLE-001
+claim: The DAIM Foundation Models introductory workflow can run and record a last-value baseline without a GPU.
+supporting_evidence:
+  - FM-EXAMPLE-001
+confidence: not_assessed
+limitations:
+  - This is a draft schema example, not a reviewed scientific claim.
+  - The linked experiment must be run and inspected before the claim is accepted.
+human_reviewed: false
+reviewer: null
+

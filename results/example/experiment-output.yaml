@@ -1,0 +1,35 @@
+agent: experiment
+status: draft_for_review
+research_question: How does a transparent naive forecast behave on a small synthetic
+  seasonal series?
+hypothesis: A last-value baseline provides a reproducible reference for testing the
+  experiment-recording workflow.
+supplied_data:
+  name: Synthetic trend-and-seasonality example
+  reference: daim-foundation-models/src/daim_fm/data.py
+  restrictions: None; generated locally.
+supplied_configuration:
+  seed: 42
+  series_length: 48
+  forecast_horizon: 12
+  model: Last-value naive forecast
+checklist:
+  question_and_hypothesis:
+  - Confirm the prediction or observation that would count against the hypothesis.
+  - Confirm that the planned analysis can address the stated question.
+  data_and_design:
+  - Check provenance, access conditions, exclusions and train/test boundaries.
+  - Name appropriate baselines, controls and sources of uncertainty.
+  recording:
+  - Freeze code and configuration references before interpreting results.
+  - Preserve result files, failed runs, limitations and software versions.
+  review:
+  - Obtain domain and methods review before running where required.
+  - Record who accepts, changes or rejects the final interpretation.
+unresolved_fields:
+- date
+review_questions:
+- Are ethical, governance or safety approvals required?
+- Could preprocessing or model selection leak information from evaluation data?
+- Are the proposed metrics meaningful in the target discipline?
+human_review_required: true

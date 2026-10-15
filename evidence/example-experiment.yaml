@@ -1,0 +1,25 @@
+experiment_id: FM-EXAMPLE-001
+research_question: How does a transparent naive forecast behave on a small synthetic seasonal series?
+hypothesis: A last-value baseline provides a reproducible reference for testing the experiment-recording workflow.
+date: null
+researcher: Unassigned
+data:
+  name: Synthetic trend-and-seasonality example
+  reference: daim-foundation-models/src/daim_fm/data.py
+  restrictions: None; generated locally.
+code_reference: daim-foundation-models/examples/run_simple_baseline.py
+configuration:
+  seed: 42
+  series_length: 48
+  forecast_horizon: 12
+  model: Last-value naive forecast
+result_files:
+  - daim-foundation-models/results/example/experiment.yaml
+  - daim-foundation-models/results/example/metrics.json
+  - daim-foundation-models/results/example/forecast.csv
+interpretation: No result has been interpreted; this is an example record for a run that still requires execution and review.
+limitations:
+  - The data are synthetic.
+  - The example evaluates research practice, not foundation-model performance.
+review_status: planned
+

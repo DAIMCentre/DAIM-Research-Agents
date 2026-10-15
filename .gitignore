@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+results/agent-example/
+results/live-*/
+
+# OS / editor junk
+.DS_Store
+._*
+Thumbs.db
+.vscode/
+.idea/
+
+# Python / tooling
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.env

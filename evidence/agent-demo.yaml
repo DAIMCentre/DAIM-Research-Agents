@@ -1,0 +1,12 @@
+question: What can the supplied records establish about the introductory DAIM experiment workflow?
+evidence:
+  - evidence_id: E-DEMO-001
+    title: Planned baseline experiment record
+    source: example-experiment.yaml
+    summary: The record specifies a synthetic time-series baseline, configuration and expected result files.
+    review_status: supplied_unreviewed
+  - evidence_id: E-DEMO-002
+    title: Draft claim record
+    source: example-claim.yaml
+    summary: The claim is explicitly unreviewed and lists synthetic data as a limitation.
+    review_status: supplied_unreviewed

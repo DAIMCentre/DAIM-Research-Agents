@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daim-research-agents"
+version = "0.2.0"
+description = "Transparent evidence workflows and a deterministic research-agent loop"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+]
+dependencies = ["PyYAML>=6.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+llm = ["anthropic"]
+
+[project.scripts]
+daim-research-agent = "daim_research_agents.cli:main"
+
+[project.urls]
+Repository = "https://github.com/DAIMCentre/DAIM-Research-Agents"
+Issues = "https://github.com/DAIMCentre/DAIM-Research-Agents/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

@@ -1,0 +1,20 @@
+agent: critic
+status: draft_for_review
+claim: The DAIM Foundation Models introductory workflow can run and record a last-value
+  baseline without a GPU.
+supporting_evidence:
+- FM-EXAMPLE-001
+stated_limitations:
+- This is a draft schema example, not a reviewed scientific claim.
+- The linked experiment must be run and inspected before the claim is accepted.
+evidence_gaps: []
+scope_concerns:
+- Check whether the claim covers more settings, populations or domains than the evidence.
+- Check whether causal language is being inferred from an observational comparison.
+- Check whether uncertainty and credible alternative explanations are represented.
+review_questions:
+- Has a reviewer inspected every linked source or result?
+- Would a negative or inconclusive result change this wording?
+- Should the claim be narrowed, revised, rejected or retained?
+decision: 'No decision: human review is required.'
+human_review_required: true
